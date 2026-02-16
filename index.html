@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Level Summit Brasil - A Maior Imersão de Negócios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#"><img src="images/logo-header.png" alt="Next Level Summit Logo" class="logo-image"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero">O Evento</a></li>
+                    <li><a href="#about">A Alma</a></li>
+                    <li><a href="#audience">Para Quem</a></li>
+                    <li><a href="#speakers">Palestrantes</a></li>
+                    <li><a href="#pricing" class="nav-cta">Ingressos</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon" id="mobile-menu-icon">
+                <i class="ph ph-list" style="font-size: 2rem; color: white;"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="eyebrow">A Maior Imersão de Negócios, Vendas e Inovação</span>
+                <h1 class="hero-title">NEXT LEVEL <br> <span class="gradient-text">SUMMIT BRASIL</span></h1>
+                <p class="hero-subtitle">Transforme sua visão em resultados exponenciais. Junte-se aos maiores líderes
+                    do mercado.</p>
+                <a href="#pricing" class="btn btn-primary btn-lg">GARANTIR MEU INGRESSO AGORA</a>
+            </div>
+            <div class="hero-image-container animate-on-scroll">
+                <img src="images/nextlevel.png" alt="Palestrante Next Level Summit" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="images/cerebro.png" alt="A Alma do Evento - Cérebro Tecnológico" class="brain-image">
+            </div>
+            <div class="about-content animate-on-scroll">
+                <span class="eyebrow">O QUE É & ALMA DO EVENTO</span>
+                <h2 class="section-title">A ALMA DO EVENTO: O FIM DO <span class="highlight">AMADORISMO</span> E O
+                    INÍCIO DO SEU PRÓXIMO NÍVEL.</h2>
+
+                <ul class="feature-list">
+                    <li>
+                        <div class="feature-icon"><i class="ph ph-rocket-launch"></i></div>
+                        <div>
+                            <h3>Estratégias de Campo de Batalha</h3>
+                            <p>Chega de teoria de palco. Tenha acesso ao playbook validado de quem vive o jogo real e
+                                sabe exatamente o que fazer para destravar seus múltiplos dígitos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class="ph ph-lightbulb"></i></div>
+                        <div>
+                            <h3>Antecipação de Futuro</h3>
+                            <p>Não espere o mercado mudar para reagir. Entenda agora as tecnologias e movimentos que vão
+                                separar os líderes dos extintos nos próximos 5 anos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class="ph ph-chart-line-up"></i></div>
+                        <div>
+                            <h3>Escala com Lucratividade</h3>
+                            <p>Ferramentas de gestão e vendas para transformar o seu negócio em uma máquina de lucro
+                                previsível, sem depender da sua presença operacional 24h.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimatum Countdown Section -->
+    <section id="ultimatum" class="section ultimatum-section">
+        <div class="ultimatum-bg-grid"></div>
+        <div class="ultimatum-particles" id="particles-js"></div>
+
+        <div class="container ultimatum-container">
+            <div class="ultimatum-content text-center">
+                <h2 class="ultimatum-title">O TEMPO PARA SER AMADOR ACABOU.</h2>
+                <h3 class="ultimatum-subtitle">SUA ÚLTIMA CHANCE DE ENTRAR PARA A <span class="highlight-neon">ELITE
+                        EMPRESARIAL</span> DA REGIÃO.</h3>
+
+                <div class="countdown-timer" id="countdown">
+                    <!-- Timer boxes will be populated by JS -->
+                    <div class="timer-box">
+                        <span class="timer-number" id="days">00</span>
+                        <span class="timer-label">DIAS</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-number" id="hours">00</span>
+                        <span class="timer-label">HORAS</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-number" id="minutes">00</span>
+                        <span class="timer-label">MIN</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="timer-number" id="seconds">00</span>
+                        <span class="timer-label">SEG</span>
+                    </div>
+                </div>
+
+                <p class="ultimatum-microcopy">O cronômetro para sua virada de chave já começou. Não fique de fora.</p>
+
+                <a href="#tickets" class="cta-button heartbeat-btn">GARANTIR MEU ACESSO AGORA ➔</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="audience" class="section audience-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">PARA QUEM É?</h2>
+                <p class="section-subtitle">Se você se identifica com um destes perfis, este lugar é para você.</p>
+            </div>
+
+            <div class="audience-grid animate-on-scroll">
+                <div class="audience-card">
+                    <div class="card-icon"><i class="ph ph-brain"></i></div>
+                    <h3>EMPRESÁRIOS VISIONÁRIOS</h3>
+                    <p>Que buscam expandir sua visão de mercado e conectar com outras mentes brilhantes.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="card-icon"><i class="ph ph-currency-dollar"></i></div>
+                    <h3>LÍDERES DE VENDAS</h3>
+                    <p>Que precisam de novas táticas para bater metas agressivas e motivar times de alta performance.
+                    </p>
+                </div>
+                <div class="audience-card">
+                    <div class="card-icon"><i class="ph ph-chart-pie-slice"></i></div>
+                    <h3>GESTORES DE MARKETING</h3>
+                    <p>Que querem dominar as novas tecnologias e estratégias de aquisição de clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="section speakers-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">PALESTRANTES CONFIRMADOS</h2>
+            </div>
+
+            <div class="speakers-grid animate-on-scroll">
+                <div class="speaker-card">
+                    <div class="speaker-image-container">
+                        <img src="images/hero-speaker.png" alt="Luiz Antonio" class="speaker-photo">
+                    </div>
+                    <div class="speaker-info">
+                        <h3>LUIZ ANTONIO</h3>
+                        <p>CEO da FLOW E IDEALIZADOR DO NEXT LEVEL SUMMIT</p>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image-placeholder">
+                        <span>Palestrante 2</span>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>LUCAS PIRES</h3>
+                        <p>SÓCIO DA IMPORTATION FOOD</p>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image-placeholder">
+                        <span>Palestrante 3</span>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>GUSTAVO CODOGNO</h3>
+                        <p>Estrategista Digital</p>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image-placeholder">
+                        <span>Palestrante 4</span>
+                    </div>
+                    <div class="speaker-info">
+                        <h3>ED DALCIN</h3>
+                        <p>Sócio Co-Fundador da Ballroo </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-lg">
+                <a href="#pricing" class="btn btn-outline">VER TODOS OS PALESTRANTES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">GARANTA SEU LUGAR</h2>
+                <p class="section-subtitle">Escolha a experiência ideal para você.</p>
+            </div>
+
+            <div class="pricing-grid animate-on-scroll">
+                <!-- Standard Ticket -->
+                <div class="pricing-card standard">
+                    <h3>STANDARD</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">147</span>
+                        <span class="cents">,00</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-blue)"></i> Acesso aos 2 dias de
+                            evento</li>
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-blue)"></i> Kit de Boas-vindas</li>
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-blue)"></i> Certificado Digital
+                        </li>
+                        <li style="opacity: 0.5"><i class="ph ph-x-circle"></i> Acesso à Área VIP</li>
+                        <li style="opacity: 0.5"><i class="ph ph-x-circle"></i> Jantar com Palestrantes</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="width: 100%; display: block; text-align: center;">QUERO O
+                        STANDARD</a>
+                </div>
+
+                <!-- VIP Ticket -->
+                <div class="pricing-card vip">
+                    <div class="best-value">MAIS VENDIDO</div>
+                    <h3>VIP EXPERIENCE</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">497</span>
+                        <span class="cents">,00</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-orange)"></i> Acesso aos 2 dias de
+                            evento</li>
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-orange)"></i> Kit VIP Premium</li>
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-orange)"></i> Certificado Impresso
+                        </li>
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-orange)"></i> Acesso à Área VIP &
+                            Networking</li>
+                        <li><i class="ph ph-check-circle" style="color: var(--accent-orange)"></i> Gravação das
+                            Palestras</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">QUERO
+                        SER VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">PERGUNTAS FREQUENTES (FAQ)</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Qual o local do evento?</h4>
+                    <p>O evento acontecerá em Nova Iguaçu no RJ no Idealle Business, 292 - Jardim Alvorada, Nova Iguaçu
+                        - RJ, 26265-090</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Posso parcelar o ingresso?</h4>
+                    <p>Sim, em até 12x no cartão de crédito.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Tem certificado?</h4>
+                    <p>Sim, todos os participantes receberão certificado de 20 horas.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Qual o horário?</h4>
+                    <p>O credenciamento inicia às 08h e o conteúdo vai até às 19h.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo mb-4">
+                <img src="images/logo-header.png" alt="Next Level Summit Logo" class="logo-footer-image">
+            </div>
+            <p>&copy; 2026 Next Level Summit. Todos os direitos reservados.</p>
+            <div class="social-links mt-4">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animations Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+
+    <script>
+        // Countdown Timer Logic
+        // Set the date we're counting down to: Apr 17, 2026 09:00:00
+        const countDownDate = new Date("Apr 17, 2026 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        const x = setInterval(function () {
+
+            // Get today's date and time
+            const now = Date.now();
+
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the elements with id="days", "hours", "minutes", "seconds"
+            // Adding separate animations for changing numbers could be done here if needed
+            document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRADO";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
