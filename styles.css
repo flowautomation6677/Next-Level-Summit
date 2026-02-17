@@ -290,6 +290,34 @@ ul {
     }
 }
 
+@media (max-width: 413px) {
+    .header-container {
+        padding: 0 0.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .eyebrow {
+        font-size: 0.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+    }
+
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
 /* Sections General */
 .section {
     padding: var(--spacing-xl) 0;
