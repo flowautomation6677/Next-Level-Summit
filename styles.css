@@ -490,6 +490,217 @@ ul {
     text-align: center;
 }
 
+/* Flip Card Specifics */
+.speaker-card.flip-card {
+    perspective: 1000px;
+    height: 520px;
+    /* Fixed height for consistent cards */
+    background-color: transparent;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-style: preserve-3d;
+}
+
+.speaker-card.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+.flip-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+}
+
+.flip-card-back {
+    background: #ffffff;
+    color: #333;
+    transform: rotateY(180deg);
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(255, 107, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    border: 2px solid var(--accent-orange);
+    overflow: hidden;
+}
+
+.speaker-badges {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.speaker-badges .badge {
+    background: rgba(0, 180, 216, 0.15);
+    color: var(--accent-blue);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 180, 216, 0.3);
+}
+
+.btn-link {
+    background: transparent;
+    color: var(--text-gray);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-link:hover {
+    color: var(--accent-orange);
+    border-color: var(--accent-orange);
+    background: rgba(255, 107, 0, 0.05);
+}
+
+/* Card Back Content Styles */
+.speaker-bio-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.speaker-photo-small {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-orange);
+}
+
+.speaker-bio-header h3 {
+    color: #111;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.speaker-bio-header p {
+    color: #666;
+    font-size: 0.75rem;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.flip-card-back .headline {
+    font-size: 1.05rem;
+    color: #000;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.speaker-logos {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: #888;
+    font-size: 0.85rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+    /* In case logos wrap */
+}
+
+.speaker-logos span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.speaker-logos i {
+    font-size: 1.2rem;
+}
+
+.speaker-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.speaker-achievements li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.speaker-achievements li::before {
+    content: "•";
+    color: var(--accent-orange);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.speaker-social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.speaker-social a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #555;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.speaker-social a:hover,
+.speaker-social a:hover i {
+    color: var(--accent-blue);
+}
+
+.speaker-social i {
+    font-size: 1.4rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
 .speaker-image-placeholder {
     width: 250px;
     height: 250px;
