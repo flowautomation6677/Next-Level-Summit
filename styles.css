@@ -264,18 +264,41 @@ ul {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 0;
+    }
+
+    .logo-image {
+        max-height: 50px;
+    }
+
     .header-container {
         padding: 0 1rem;
     }
 
     .nav {
         display: none;
-        /* Add mobile menu toggle logic here */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-dark);
+        padding: 2rem 0;
+        border-bottom: 2px solid var(--accent-orange);
+    }
+    
+    .nav.active {
+        display: block;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
     }
 
     .mobile-menu-icon {
         display: block;
-        /* Show on mobile */
     }
 
     .hero-content {

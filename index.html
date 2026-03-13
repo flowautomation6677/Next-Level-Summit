@@ -249,7 +249,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title">PARA QUEM É?</h2>
-                <p class="section-subtitle">Se você se identifica com um destes perfis, este lugar é para você.</p>
+                <p class="section-subtitle">Para empresas com no mínimo de 3 funcionários. Se você se identifica com um destes perfis, este lugar é para você.</p>
             </div>
 
             <div class="audience-grid animate-on-scroll">
@@ -636,6 +636,22 @@
     <!-- Animations Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+            const nav = document.querySelector('.nav');
+
+            if (mobileMenuIcon && nav) {
+                mobileMenuIcon.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+
+                const navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        nav.classList.remove('active');
+                    });
+                });
+            }
+
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: "0px 0px -50px 0px"
