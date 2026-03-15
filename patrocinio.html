@@ -18,6 +18,102 @@
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        /* ============================================
+           Patrocinio Page — Responsive Overrides
+           ============================================ */
+
+        /* --- Hero / Abertura --- */
+        #abertura .hero-content {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+        }
+        #abertura .hero-title {
+            font-size: clamp(2rem, 6vw, 4rem);
+        }
+        #abertura .hero-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin: 1.5rem auto;
+        }
+        #abertura .btn {
+            display: inline-block;
+        }
+
+        /* --- Filtro --- */
+        @media (max-width: 768px) {
+            #filtro .about-container {
+                grid-template-columns: 1fr !important;
+            }
+            #filtro .about-image {
+                order: 2;
+            }
+            #filtro .about-content {
+                order: 1;
+            }
+        }
+
+        /* --- Autoridade --- */
+        @media (max-width: 768px) {
+            #autoridade .pricing-card {
+                flex-direction: column !important;
+                text-align: center !important;
+                padding: 2rem !important;
+                gap: 1.5rem !important;
+            }
+            #autoridade .speaker-image-container {
+                width: 160px !important;
+                height: 160px !important;
+                margin: 0 auto !important;
+            }
+            #autoridade .speaker-badges {
+                justify-content: center !important;
+            }
+            #autoridade .speaker-achievements li {
+                text-align: left;
+            }
+            #autoridade h3 {
+                text-align: center !important;
+            }
+        }
+
+        /* --- Cotas --- */
+        @media (max-width: 900px) {
+            #cotas .pricing-grid {
+                grid-template-columns: 1fr !important;
+                max-width: 480px !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #cotas .pricing-card.vip {
+                transform: scale(1) !important;
+                border-width: 2px;
+            }
+            #cotas .pricing-card {
+                padding: 2rem 1.5rem !important;
+            }
+            .hide-on-mobile {
+                display: none !important;
+            }
+        }
+
+        /* --- CTA Button --- */
+        @media (max-width: 600px) {
+            #abertura .btn {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-right: 0 !important;
+                margin-bottom: 1rem !important;
+            }
+            #cotas .btn.heartbeat-btn {
+                font-size: 1rem !important;
+                padding: 1.2rem 2rem !important;
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -141,26 +237,7 @@
             </div>
         </div>
         
-        <!-- Override mobile authoriry box styling -->
-        <style>
-            @media (max-width: 768px) {
-                #autoridade .pricing-card {
-                    flex-direction: column !important;
-                    text-align: center !important;
-                    padding: 2rem !important;
-                    gap: 1.5rem !important;
-                }
-                #autoridade .speaker-badges {
-                    justify-content: center !important;
-                }
-                #autoridade .speaker-achievements li {
-                    text-align: left;
-                }
-                #autoridade h3 {
-                    text-align: center !important;
-                }
-            }
-        </style>
+
     </section>
 
     <!-- Seção 4: As Cotas (O Fechamento) -->
@@ -260,16 +337,7 @@
             </div>
         </div>
         
-        <style>
-             @media (max-width: 768px) {
-                 #cotas .pricing-card.vip {
-                    transform: scale(1);
-                 }
-                 .hide-on-mobile {
-                     display: none !important;
-                 }
-             }
-        </style>
+
     </section>
 
     <!-- Footer -->
