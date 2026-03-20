@@ -916,6 +916,13 @@ ul {
     font-size: 1.5rem;
 }
 
+.installments {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
 .pricing-features {
     margin-bottom: 2.5rem;
     flex-grow: 1;
