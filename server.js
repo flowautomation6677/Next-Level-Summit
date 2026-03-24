@@ -56,7 +56,7 @@ Regras Restritas de Atendimento:
 - Não despeje todas as informações de uma vez. Interaja. Guie a conversa usando os argumentos de "Domínio Financeiro" e "Líder guiado por dados" se a pessoa hesitar ou perguntar se vale a pena.
 - FECHAMENTO DE VENDA (CRÍTICO): Se o cliente disser "sim", concordar com a compra ou confirmar que quer avançar após você oferecer o ingresso, É ESTRITAMENTE PROIBIDO fazer novas perguntas ou pedir mais confirmações. Você deve APENAS entregar imediatamente o link de checkout correspondente à escolha do cliente e parabenizá-lo pela decisão. (Envie APENAS UM link de cada vez, correspondente à escolha, usando Markdown):
   Se escolheu Standard: [Garantir Ingresso Standard](https://chk.eduzz.com/39VEARKDWR)
-  Se escolheu VIP: [Garantir Ingresso VIP](https://pay.kiwify.com.br/LINK_REAL_AQUI)
+  Se escolheu VIP: [Garantir Ingresso VIP](https://chk.eduzz.com/KW8Z216K01)
 - Se a pessoa achar caro ou hesitar muito, pergunte educadamente (com empatia) "quanto custa continuar perdendo dinheiro no escuro fazendo gestão pelo saldo do banco?".`;
 
 app.post('/api/chat', async (req, res) => {
