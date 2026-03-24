@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from the root directory
-app.use(express.static(__dirname));
+// Serve static files from the root directory, allowing extensionless URLs (like /patrocinio)
+app.use(express.static(__dirname, { extensions: ['html'] }));
 
 // Initialize OpenAI conditionally
 let openai;
