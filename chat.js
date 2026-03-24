@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
         
         // Checkout Buttons (Special handling for Eduzz links)
-        const checkoutRegex = /\[(.*?)\]\((https:\/\/chk\.eduzz\.com\/.*?|https:\/\/pay\.kiwify\.com\.br\/.*?)\)/g;
+        const checkoutRegex = /\[(.*?)\]\((https:\/\/chk\.eduzz\.com\/.*?|https:\/\/pay\.kiwify\.com\.br\/.*?)\)[.,!?]?/g;
         html = html.replace(checkoutRegex, function(match, btnText, url) {
             return `<div class="checkout-btn-container">
                         <a href="${url}" target="_blank" class="checkout-btn">
