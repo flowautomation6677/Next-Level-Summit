@@ -1,0 +1,9 @@
+node_modules/
+.env
+.DS_Store
+*.log
+out.txt
+push_error.txt
+push_error_branch.txt
+
+push_error_final.txt
