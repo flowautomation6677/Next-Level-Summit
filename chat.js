@@ -181,8 +181,20 @@ document.addEventListener('DOMContentLoaded', () => {
         html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         // Italic: *text*
         html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
-        // Links: [text](url)
-        html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+        
+        // Checkout Buttons (Special handling for Eduzz links)
+        const checkoutRegex = /\[(.*?)\]\((https:\/\/chk\.eduzz\.com\/.*?|https:\/\/pay\.kiwify\.com\.br\/.*?)\)/g;
+        html = html.replace(checkoutRegex, function(match, btnText, url) {
+            return `<div class="checkout-btn-container">
+                        <a href="${url}" target="_blank" class="checkout-btn">
+                            <i class="fas fa-shopping-cart"></i> ${btnText}
+                        </a>
+                    </div>`;
+        });
+
+        // Regular Links: [text](url) - only if they weren't matched as buttons
+        html = html.replace(/\[(.*?)\]\((?!<div)(.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+        
         // Line breaks
         html = html.replace(/\n/g, '<br>');
         return html;

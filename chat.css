@@ -390,3 +390,44 @@ body.chat-page {
     margin: 8px 0;
     padding-left: 20px;
 }
+
+/* Big Structured Checkout Button */
+.checkout-btn-container {
+    display: block;
+    margin: 15px 0 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.checkout-btn {
+    display: block;
+    background: var(--gradient-orange);
+    color: #fff !important;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none !important;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.checkout-btn i {
+    margin-right: 8px;
+}
+
+.checkout-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(255, 107, 0, 0.5);
+    background: #ff7b00;
+    color: #fff !important;
+}
+
+.checkout-btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
