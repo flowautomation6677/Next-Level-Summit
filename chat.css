@@ -395,44 +395,39 @@ body.chat-page {
 .checkout-btn-container {
     display: flex;
     justify-content: center;
-    margin: 12px 0 4px 0;
+    margin: 16px 0; /* More breathing room top and bottom */
     width: 100%;
 }
 
 .checkout-btn {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     background: var(--gradient-orange);
-    color: #fff !important;
-    padding: 14px 24px;
-    border-radius: 50px;
-    font-weight: 700;
+    color: #ffffff !important;
+    padding: 12px 28px;
+    border-radius: 100px; /* Perfect pill shape */
+    font-weight: 600; /* Slightly less heavy than 700 or 800 */
     text-decoration: none !important;
-    font-size: 1rem;
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
-    transition: all 0.2s ease;
-    border: none;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-align: center;
+    font-size: 0.95rem; /* Better scale inside a chat bubble */
+    box-shadow: 0 8px 24px rgba(255, 107, 0, 0.25);
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    max-width: 90%;
-    width: fit-content;
+    max-width: 95%;
 }
 
 .checkout-btn i {
-    margin-right: 10px;
-    font-size: 1.1rem;
+    margin-right: 8px;
+    font-size: 1.05rem;
 }
 
 .checkout-btn:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.6);
-    background: #ff7b00;
-    color: #fff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(255, 107, 0, 0.35);
 }
 
 .checkout-btn:active {
-    transform: translateY(1px) scale(0.98);
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
 }
