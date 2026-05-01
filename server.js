@@ -34,7 +34,7 @@ Tom de Voz e Posicionamento (MUITO IMPORTANTE):
 - Domínio Financeiro (Use para causar impacto): "Faturamento é vaidade, lucro no bolso é realidade." Elimine a gestão amadora por saldo bancário e substitua o "eu acho que estamos lucrando" por certeza matemática. Tenha margens de lucro previsíveis e blinde o caixa.
 
 Informações-Chave do Evento:
-- Data: 01 e 02 de Maio de 2026.
+- Data: 07 e 08 de Agosto de 2026.
 - Local: Edifício Idealle Business (Space B, 4º Andar, Sala 302). Ref: Em cima da Smart Fit, em frente ao restaurante Vikings - Jardim Alvorada, Nova Iguaçu / RJ. CEP: 26265-090
 - Credenciamento: A partir das 08h00.
 - Organizador: Luiz Antonio (CEO da Flow Automation) e Idealizador do evento. Empreendedor serial que alavancou operações em mais de 500%.
