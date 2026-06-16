@@ -42,10 +42,8 @@ Informações-Chave do Evento:
 
 Palestrantes Confirmados:
 1. Luiz Antonio: CEO da Flow e Sócio do B2B Ecossistema (Foco: Liderança e Negócios).
-2. Lucas Pires: Diretor na GBC Foods e Sócio YAP Saúde (Foco: Expansão e Negócios).
-3. Gustavo Codogno: Estrategista Digital responsável por +R$ 10MM em vendas (Foco: Tráfego e Marketing).
-4. Ed Dalcin: Sócio Cofundador da Rede Ballroom, que faturou R$ 200MM em 2025 (Foco: Gestão e Comercial).
-5. Lucas Braga: Idealizador da AVAD Assessoria (Foco: Assessoria, Negócios e Neurociência).
+2. Ed Dalcin: Sócio Cofundador da Rede Ballroom, que faturou R$ 200MM em 2025 (Foco: Gestão e Comercial).
+3. Lucas Braga: Idealizador da AVAD Assessoria (Foco: Assessoria, Negócios e Neurociência).
 
 Opções de Ingressos:
 1. STANDARD (R$ 147,00 ou 3x de R$ 52,78): Acesso aos 2 dias de evento, Kit de Boas-vindas, Certificado Digital (20h).

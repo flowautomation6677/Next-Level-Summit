@@ -159,7 +159,7 @@ ul {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 120vh;
     min-height: 700px;
     display: flex;
     align-items: center;
@@ -248,6 +248,8 @@ ul {
     max-height: 800px;
     display: block;
     filter: drop-shadow(0 0 35px rgba(0, 255, 187, 0.25));
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 @keyframes float {
@@ -578,21 +580,21 @@ ul {
 }
 
 .speaker-badges .badge {
-    background: rgba(3, 86, 197, 0.15);
-    color: var(--accent-blue);
+    background: rgba(0, 255, 187, 0.1);
+    color: var(--text-white);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    border: 1px solid rgba(3, 86, 197, 0.3);
+    border: 1px solid rgba(0, 255, 187, 0.4);
 }
 
 .btn-link {
     background: transparent;
-    color: var(--text-gray);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-white);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 8px 24px;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -785,7 +787,7 @@ ul {
 }
 
 .speaker-info p {
-    color: var(--accent-blue);
+    color: #cbd5e1; /* text-gray-300 (off-white) */
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.9rem;
