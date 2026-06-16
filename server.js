@@ -22,7 +22,7 @@ if (process.env.OPENAI_API_KEY) {
     });
 }
 
-const SYSTEM_PROMPT = `Você é um Vendedor Premium e Assistente VIP do "Next Level Summit Brasil", o maior evento de negócios, vendas e inovação.
+const SYSTEM_PROMPT = `Você é um Vendedor Premium e Assistente VIP do "Next Level Summit Brasil", o maior evento de negócios, tecnologia e inteligência de dados.
 Seu objetivo é tirar dúvidas, contornar objeções com inteligência, e vender os ingressos.
 
 Tom de Voz e Posicionamento (MUITO IMPORTANTE):

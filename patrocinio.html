@@ -14,7 +14,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -38,6 +38,15 @@
         }
         #abertura .btn {
             display: inline-block;
+        }
+
+        /* --- Hero / Abertura Mobile --- */
+        @media (max-width: 768px) {
+            #abertura {
+                height: auto !important;
+                min-height: 100vh !important;
+                padding-bottom: 4rem !important;
+            }
         }
 
         /* --- Filtro --- */
@@ -345,8 +354,8 @@
     <footer class="footer">
         <div class="container text-center">
             <div class="logo mb-4">
-                <img src="images/logo-header.webp" alt="Next Level Summit Logo" class="logo-footer-image" width="171"
-                    height="140" loading="lazy">
+                <img src="images/logo-footer.webp" alt="Next Level Summit Logo" class="logo-footer-image" width="280"
+                    height="280" loading="lazy">
             </div>
             <p>&copy; 2026 Next Level Summit. Todos os direitos reservados.</p>
         </div>
