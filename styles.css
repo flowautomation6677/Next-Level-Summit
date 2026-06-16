@@ -247,8 +247,6 @@ ul {
     height: auto;
     max-height: 800px;
     display: block;
-    mask-image: radial-gradient(ellipse 85% 75% at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 90%);
-    -webkit-mask-image: radial-gradient(ellipse 85% 75% at center, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 90%);
     filter: drop-shadow(0 0 35px rgba(0, 255, 187, 0.25));
 }
 
