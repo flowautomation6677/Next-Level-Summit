@@ -159,12 +159,12 @@ ul {
 
 /* Hero Section */
 .hero {
-    height: 120vh;
-    min-height: 700px;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     /* Header height */
     overflow: hidden;
 }
