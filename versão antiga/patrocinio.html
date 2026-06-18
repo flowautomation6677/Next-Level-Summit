@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Comercial - Next Level Summit Brasil</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#121214">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        /* ============================================
+           Patrocinio Page — Responsive Overrides
+           ============================================ */
+
+        /* --- Hero / Abertura --- */
+        #abertura .hero-content {
+            grid-template-columns: 1fr !important;
+            text-align: center;
+        }
+        #abertura .hero-title {
+            font-size: clamp(2rem, 6vw, 4rem);
+        }
+        #abertura .hero-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin: 1.5rem auto;
+        }
+        #abertura .btn {
+            display: inline-block;
+        }
+
+        /* --- Filtro --- */
+        @media (max-width: 768px) {
+            #filtro .about-container {
+                grid-template-columns: 1fr !important;
+            }
+            #filtro .about-image {
+                order: 2;
+            }
+            #filtro .about-content {
+                order: 1;
+            }
+        }
+
+        /* --- Autoridade --- */
+        @media (max-width: 768px) {
+            #autoridade .pricing-card {
+                flex-direction: column !important;
+                text-align: center !important;
+                padding: 2rem !important;
+                gap: 1.5rem !important;
+            }
+            #autoridade .speaker-image-container {
+                width: 160px !important;
+                height: 160px !important;
+                margin: 0 auto !important;
+            }
+            #autoridade .speaker-badges {
+                justify-content: center !important;
+            }
+            #autoridade .speaker-achievements li {
+                text-align: left;
+            }
+            #autoridade h3 {
+                text-align: center !important;
+            }
+        }
+
+        /* --- Cotas --- */
+        @media (max-width: 900px) {
+            #cotas .pricing-grid {
+                grid-template-columns: 1fr !important;
+                max-width: 480px !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #cotas .pricing-card.vip {
+                transform: scale(1) !important;
+                border-width: 2px;
+            }
+            #cotas .pricing-card {
+                padding: 2rem 1.5rem !important;
+            }
+            .hide-on-mobile {
+                display: none !important;
+            }
+        }
+
+        /* --- CTA Button --- */
+        @media (max-width: 600px) {
+            #abertura .btn {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                text-align: center;
+                margin: 0 auto 1rem !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                white-space: normal;
+            }
+            #cotas .btn.heartbeat-btn {
+                font-size: 1rem !important;
+                padding: 1.2rem 2rem !important;
+                width: 100%;
+                display: block;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Simples -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-header.webp" alt="Next Level Summit Logo" class="logo-image"
+                        width="171" height="140"></a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#abertura">A Visão</a></li>
+                    <li><a href="#filtro">O Público</a></li>
+                    <li><a href="#autoridade">Autoridade</a></li>
+                    <li><a href="#cotas" class="nav-cta">Cotas</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon" id="mobile-menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção 1: A Abertura (A Visão) -->
+    <section id="abertura" class="hero" style="min-height: 85vh; padding-top: 120px; align-items: center;">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content" style="grid-template-columns: 1fr; text-align: center;">
+            <div class="hero-text" style="max-width: 900px; margin: 0 auto; z-index: 2;">
+                <span class="eyebrow" style="font-size: 1rem; letter-spacing: 2px;">APRESENTAÇÃO COMERCIAL</span>
+                <h1 class="hero-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-top: 1rem;">O PONTO DE ENCONTRO DE QUEM <br> <span class="gradient-text">MOVIMENTA A ECONOMIA</span> <br> DA REGIÃO.</h1>
+                <p class="hero-subtitle" style="margin: 2rem auto; font-size: 1.2rem; max-width: 800px; line-height: 1.8;">
+                    O Next Level Summit Brasil não é apenas um ciclo de palestras. É o epicentro para empresários com operações ativas que buscam o próximo nível de escala, gestão e networking.
+                </p>
+                <div style="margin-top: 3rem;">
+                    <a href="#filtro" class="btn btn-primary btn-lg" style="margin-right: 1rem; margin-bottom: 1rem;">CONHECER O PÚBLICO</a>
+                    <a href="#cotas" class="btn btn-outline" style="margin-bottom: 1rem;">VER OPÇÕES DE COTA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2: O Filtro (O Público-Alvo) -->
+    <section id="filtro" class="section about-section" style="padding-top: 6rem; padding-bottom: 6rem;">
+        <div class="container about-container">
+            <div class="about-content animate-on-scroll">
+                <span class="eyebrow">AUDIÊNCIA EXCLUSIVA</span>
+                <h2 class="section-title">QUEM ESTARÁ NA <span class="highlight">SALA</span>?</h2>
+                <p style="color: var(--text-gray); font-size: 1.15rem; margin-bottom: 2rem; max-width: 500px;">Não é um evento para curiosos ou quem "quer começar a empreender". Nosso foco exclusivo são negócios já validados.</p>
+
+                <ul class="feature-list" style="margin-top: 3rem;">
+                    <li>
+                        <div class="feature-icon"><i class="ph ph-trend-up"></i></div>
+                        <div>
+                            <h3 style="color: var(--text-white); font-size: 1.3rem;">Filtro de Tração</h3>
+                            <p style="font-size: 1rem;">Empresas com <strong>3 ou mais funcionários</strong>. Negócios estruturados que precisam das soluções do seu portfólio.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class="ph ph-user-focus"></i></div>
+                        <div>
+                            <h3 style="color: var(--text-white); font-size: 1.3rem;">Decisores na Mesa</h3>
+                            <p style="font-size: 1rem;">Apenas <strong>CEOs, Diretores e Gestores</strong> com poder de assinatura corporativa. Você falará com quem assina o cheque.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon"><i class="ph ph-share-network"></i></div>
+                        <div>
+                            <h3 style="color: var(--text-white); font-size: 1.3rem;">Ecossistema Multi-Setorial</h3>
+                            <p style="font-size: 1rem;">Uma rede rica de networking contendo varejo, serviços, tecnologia, indústria e comércio local da região.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="about-image animate-on-scroll" style="display: flex; justify-content: center;">
+                <div style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0, 180, 216, 0.2); border: 2px solid rgba(255, 255, 255, 0.05); max-width: 500px; width: 100%;">
+                    <div style="background: linear-gradient(135deg, #112240 0%, #0a192f 100%); padding: 4rem 2rem; text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center; min-height: 400px;">
+                        <i class="ph ph-users-three" style="font-size: 6rem; color: var(--accent-orange); margin-bottom: 1.5rem; filter: drop-shadow(0 0 15px rgba(255, 107, 0, 0.4));"></i>
+                        <h3 style="color: var(--text-white); font-size: 1.8rem; font-weight: 800; margin-bottom: 1rem;">LIDERANÇAS C-LEVEL</h3>
+                        <p style="color: var(--text-gray); font-size: 1rem;">O ambiente de alto nível ideal para sua marca ser vista.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: A Ancoragem de Autoridade -->
+    <section id="autoridade" class="section speakers-section" style="padding-top: 6rem; padding-bottom: 6rem;">
+        <div class="container" style="max-width: 900px;">
+            <div class="section-header text-center" style="margin-bottom: 4rem;">
+                <h2 class="section-title">A FORÇA POR TRÁS DO EVENTO</h2>
+                <p class="section-subtitle" style="margin-bottom: 1rem;">A credibilidade do evento é ancorada no histórico de quem o organiza.</p>
+            </div>
+            
+            <div class="pricing-card" style="background: linear-gradient(145deg, #112240 0%, #0d1f3a 100%); border: 1px solid var(--accent-blue); padding: 3rem; display: flex; flex-direction: row; gap: 3rem; align-items: center; box-shadow: 0 0 30px rgba(0, 180, 216, 0.15);">
+                
+                <div class="speaker-image-container" style="flex-shrink: 0; width: 220px; height: 220px; margin: 0; border: 4px solid var(--accent-orange);">
+                    <img src="images/hero-speaker.webp" alt="Luiz Antonio" class="speaker-photo" width="220" height="220" loading="lazy">
+                </div>
+                
+                <div style="text-align: left; flex-grow: 1;">
+                    <div class="speaker-badges" style="justify-content: flex-start; margin-bottom: 1rem;">
+                        <span class="badge" style="background: rgba(255, 107, 0, 0.15); color: var(--accent-orange); border-color: rgba(255, 107, 0, 0.3);">LUIZ ANTONIO</span>
+                    </div>
+                    <h3 style="color: var(--text-white); font-size: 2rem; margin-bottom: 0.5rem; font-weight: 800; text-align: left;">O ORGANIZADOR</h3>
+                    
+                    <ul class="speaker-achievements" style="margin-top: 1.5rem;">
+                        <li style="color: var(--text-gray); font-size: 1.05rem; margin-bottom: 12px; font-weight: normal;">Formado em Sistemas de Computação <strong>(UFF)</strong>.</li>
+                        <li style="color: var(--text-gray); font-size: 1.05rem; margin-bottom: 12px; font-weight: normal;">Sócio Fundador da <strong>Flow Automation</strong> e Sócio do <strong>B2B Ecossistema</strong>.</li>
+                        <li style="color: var(--text-gray); font-size: 1.05rem; margin-bottom: 12px; font-weight: normal;">Co-fundador e Desenvolvedor do software <strong>Me Poupay</strong>.</li>
+                        <li style="color: var(--text-white); font-size: 1.05rem; font-weight: 600;">Eleito <strong>Empresário de Maior Destaque (2025)</strong> pela Escola de Negócios RED (Melhor Aluno Empresário com <span class="highlight-neon">500% de crescimento validado</span>).</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Seção 4: As Cotas (O Fechamento) -->
+    <section id="cotas" class="section pricing-section" style="padding-top: 6rem; padding-bottom: 8rem; background-color: var(--primary-dark);">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" style="font-size: 2.2rem;">O NÍVEL DE POSICIONAMENTO DA SUA MARCA</h2>
+                <p class="section-subtitle" style="font-size: 1.1rem; max-width: 800px;">Cotas desenhadas para máxima visibilidade e acesso ao mailing de decisores do evento.</p>
+            </div>
+
+            <div class="pricing-grid animate-on-scroll" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); max-width: 1200px; gap: 2rem;">
+                
+                <!-- COTA EXPERIENCE -->
+                <div class="pricing-card standard" style="padding: 2.5rem 2rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">EXPERIENCE</h3>
+                    <div class="price" style="margin-bottom: 1.5rem;">
+                        <span style="font-size: 1rem; color: var(--text-gray); display: block; margin-bottom: 5px;">12x de</span>
+                        <span class="currency" style="font-size: 1.2rem;">R$</span>
+                        <span class="amount" style="font-size: 3rem;">124</span>
+                        <span class="cents">,11</span>
+                        <span style="font-size: 0.9rem; color: var(--text-gray); display: block; margin-top: 5px;">ou R$ 1.200,00 à vista</span>
+                    </div>
+                    
+                    <hr style="border-color: rgba(255,255,255,0.05); margin-bottom: 1.5rem;">
+                    
+                    <ul class="pricing-features" style="font-size: 0.95rem; margin-bottom: 0; text-align: left;">
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: var(--accent-blue); font-size: 1.5rem;"></i> <strong>Visibilidade:</strong> Banner de Parceiros</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: var(--accent-blue); font-size: 1.5rem;"></i> <strong>Acesso:</strong> Ativação nos intervalos</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-gift" style="color: var(--accent-blue); font-size: 1.5rem;"></i> <strong>Ação Promocional:</strong> Inserção na Sacola de Boas-Vindas</li>
+                        
+                        <li class="hide-on-mobile" style="opacity: 0.3; margin-top: 1rem;"><i class="ph ph-x-circle" style="font-size: 1.5rem;"></i> <strong>Dados:</strong> ❌ Lista do Mailing (Leads)</li>
+                        <li class="hide-on-mobile" style="opacity: 0.3;"><i class="ph ph-x-circle" style="font-size: 1.5rem;"></i> <strong>Palco:</strong> ❌ Pitch Comercial</li>
+                        <li class="hide-on-mobile" style="opacity: 0.3;"><i class="ph ph-x-circle" style="font-size: 1.5rem;"></i> <strong>Exclusivo:</strong> ❌ Almoço com Palestrantes</li>
+                    </ul>
+                </div>
+
+                <!-- COTA BUSINESS -->
+                <div class="pricing-card vip" style="padding: 3rem 2rem; border: 2px solid var(--accent-orange); transform: scale(1.05); z-index: 10;">
+                    <div class="best-value" style="font-size: 0.9rem; padding: 8px 20px;">MAIS VENDIDO</div>
+                    <h3 style="color: var(--accent-orange); font-size: 1.8rem; margin-bottom: 1rem; margin-top: 1rem;">BUSINESS</h3>
+                    <div class="price" style="margin-bottom: 1.5rem;">
+                        <span style="font-size: 1rem; color: var(--accent-orange); display: block; margin-bottom: 5px; opacity: 0.8;">12x de</span>
+                        <span class="currency" style="font-size: 1.2rem; color: var(--accent-orange);">R$</span>
+                        <span class="amount" style="font-size: 3.5rem; color: var(--text-white);">206</span>
+                        <span class="cents" style="color: var(--accent-orange);">,85</span>
+                        <span style="font-size: 0.9rem; color: var(--accent-orange); display: block; margin-top: 5px; opacity: 0.8;">ou R$ 2.000,00 à vista</span>
+                    </div>
+                    
+                    <hr style="border-color: rgba(255,107,0,0.2); margin-bottom: 1.5rem;">
+                    
+                    <ul class="pricing-features" style="font-size: 0.95rem; margin-bottom: 0; text-align: left;">
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: var(--accent-orange); font-size: 1.5rem;"></i> <strong>Visibilidade:</strong> Banner de Parceiros</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: var(--accent-orange); font-size: 1.5rem;"></i> <strong>Visibilidade Premium:</strong> Vinheta no Telão</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-star" style="color: var(--accent-orange); font-size: 1.5rem;"></i> <strong>Palco:</strong> Pitch Comercial de 1 min</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: var(--accent-orange); font-size: 1.5rem;"></i> <strong>Acesso:</strong> Balcão de Atendimento</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-gift" style="color: var(--accent-orange); font-size: 1.5rem;"></i> <strong>Captação de Leads:</strong> Sorteio no palco para captar contatos</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-gift" style="color: var(--accent-orange); font-size: 1.5rem;"></i> <strong>Ação Promocional:</strong> Inserção na Sacola de Boas-Vindas</li>
+
+                        <li class="hide-on-mobile" style="opacity: 0.3; margin-top: 1rem;"><i class="ph ph-x-circle" style="font-size: 1.5rem;"></i> <strong>Dados:</strong> ❌ Lista do Mailing</li>
+                        <li class="hide-on-mobile" style="opacity: 0.3;"><i class="ph ph-x-circle" style="font-size: 1.5rem;"></i> <strong>Exclusivo:</strong> ❌ Almoço com Palestrantes</li>
+                    </ul>
+                </div>
+
+                <!-- COTA MASTER -->
+                <div class="pricing-card standard" style="padding: 2.5rem 2rem; border-top: 5px solid #FFD700; background: linear-gradient(180deg, rgba(255,215,0,0.05) 0%, transparent 100%);">
+                    <h3 style="color: #FFD700; font-size: 1.6rem; margin-bottom: 1rem;">MASTER</h3>
+                    <div class="price" style="margin-bottom: 1.5rem;">
+                        <span style="font-size: 1rem; color: #FFD700; display: block; margin-bottom: 5px; opacity: 0.8;">12x de</span>
+                        <span class="currency" style="font-size: 1.2rem;">R$</span>
+                        <span class="amount" style="font-size: 3rem;">310</span>
+                        <span class="cents">,28</span>
+                        <span style="font-size: 0.9rem; color: #FFD700; display: block; margin-top: 5px; opacity: 0.8;">ou R$ 3.000,00 à vista</span>
+                    </div>
+                    
+                    <hr style="border-color: rgba(255,215,0,0.2); margin-bottom: 1.5rem;">
+                    
+                    <ul class="pricing-features" style="font-size: 0.95rem; margin-bottom: 0; text-align: left;">
+                        <li style="color: var(--text-white); margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(255,255,255,0.1);"><i class="ph-fill ph-plus-circle" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>+ Todos os benefícios da Cota Business</strong></li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Visibilidade:</strong> Vídeo 1m 30s no Telão / Dia</li>
+                        <li style="color: var(--text-white);"><i class="ph-fill ph-check-circle" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Acesso:</strong> Estande Premium Físico</li>
+                        <li style="color: #FFD700; font-weight: 600;"><i class="ph-fill ph-gift" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Ativação VIP:</strong> Entrega de material exclusivo durante o pitch</li>
+                        <li style="color: #FFD700; font-weight: 600;"><i class="ph-fill ph-gift" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Ação Promocional:</strong> Inserção na Sacola de Boas-Vindas</li>
+                        <li style="color: #FFD700; font-weight: 600;"><i class="ph-fill ph-star" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Dados:</strong> Lista do Mailing (Leads)</li>
+                        <li style="color: #FFD700; font-weight: 600;"><i class="ph-fill ph-star" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Palco:</strong> Pitch Comercial de 3 Min</li>
+                        <li style="color: #FFD700; font-weight: 600;"><i class="ph-fill ph-star" style="color: #FFD700; font-size: 1.5rem;"></i> <strong>Exclusivo:</strong> Almoço VIP</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="text-center" style="margin-top: 5rem;">
+                <p style="font-size: 1.1rem; color: var(--text-gray); margin-bottom: 1.5rem;">Selecione sua cota e associe sua marca com a economia real da região.</p>
+                <a href="#link_whatsapp" class="btn btn-primary heartbeat-btn" style="font-size: 1.3rem; padding: 1.5rem 3.5rem;">FECHAR MINHA COTA AGORA</a>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo mb-4">
+                <img src="images/logo-header.webp" alt="Next Level Summit Logo" class="logo-footer-image" width="171"
+                    height="140" loading="lazy">
+            </div>
+            <p>&copy; 2026 Next Level Summit. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+            const nav = document.querySelector('.nav');
+
+            if (mobileMenuIcon && nav) {
+                mobileMenuIcon.addEventListener('click', () => {
+                    nav.classList.toggle('active');
+                });
+
+                const navLinks = nav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        nav.classList.remove('active');
+                    });
+                });
+            }
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>
