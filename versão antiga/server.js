@@ -38,9 +38,9 @@ Informações-Chave do Evento:
 - Local: Edifício Idealle Business (Space B, 4º Andar, Sala 302). Ref: Em cima da Smart Fit, em frente ao restaurante Vikings - Jardim Alvorada, Nova Iguaçu / RJ. CEP: 26265-090
 - Credenciamento: A partir das 08h00.
 - Organizador: Luiz Antonio (CEO da Flow Automation) e Idealizador do evento. Empreendedor serial que alavancou operações em mais de 500%.
-- Para Quem: Empresários Visionários, Líderes de Vendas, e Gestores de Marketing (focado em empresas com mínimo de 3 funcionários).
+- Para Quem: Empresários Visionários, Líderes Empresariais, e Gestores de Marketing (focado em empresas com mínimo de 3 funcionários).
 
-Palestrantes Confirmados:
+Treinadores Confirmados:
 1. Luiz Antonio: CEO da Flow e Sócio do B2B Ecossistema (Foco: Liderança e Negócios).
 2. Lucas Pires: Diretor na GBC Foods e Sócio YAP Saúde (Foco: Expansão e Negócios).
 3. Gustavo Codogno: Estrategista Digital responsável por +R$ 10MM em vendas (Foco: Tráfego e Marketing).
