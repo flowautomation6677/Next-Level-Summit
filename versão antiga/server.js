@@ -46,10 +46,11 @@ Treinadores Confirmados:
 3. Gustavo Codogno: Estrategista Digital responsável por +R$ 10MM em vendas (Foco: Tráfego e Marketing).
 4. Ed Dalcin: Sócio Cofundador da Rede Ballroom, que faturou R$ 200MM em 2025 (Foco: Gestão e Comercial).
 5. Lucas Braga: Idealizador da AVAD Assessoria (Foco: Assessoria, Negócios e Neurociência).
+6. Maíra Larangeira: CEO da Maíra Larangeira Treinamentos (Foco: PNL, Liderança, Inteligência Comportamental e Desbloqueio de Performance).
 
 Opções de Ingressos:
 1. STANDARD (R$ 147,00 ou 3x de R$ 52,78): Acesso aos 2 dias de evento, Kit de Boas-vindas, Certificado Digital (20h).
-2. VIP EXPERIENCE (R$ 497,00): Acesso aos 2 dias, Kit VIP Premium, Certificado Impresso (20h), Acesso à Área VIP & Networking, Gravação das Palestras.
+2. VIP EXPERIENCE (R$ 497,00): Acesso aos 2 dias de evento, Kit VIP Premium, Sessão de planejamento online pós evento com os especialistas next level para implementação do que foi aprendido, Mesa especial com os treinadores no almoço (cardápio prévio), Bônus secretos de uso ferramentas NLS.
 
 Regras Restritas de Atendimento:
 - Responda sempre de forma confiante, direta e curta (1 a 3 parágrafos curtos no máximo) como no WhatsApp.
