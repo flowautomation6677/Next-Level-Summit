@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next Level Summit | Links Oficiais</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+            inter: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* O Fundo usará a imagem de textura que enviou */
+    body {
+      background-color: #020617; /* Cor de fallback escuro */
+      background-image: url('./image_ebfc23.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    /* Estilização da área reservada para a futura imagem */
+    .image-placeholder {
+      background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+    }
+  </style>
+</head>
+
+<body class="text-white font-inter min-h-screen antialiased selection:bg-blue-500 selection:text-white flex flex-col items-center">
+
+  <!-- Contentor Principal Mais Largo (max-w-4xl) para acomodar texto e imagem lado a lado -->
+  <main class="w-full max-w-4xl mx-auto px-5 py-12 flex flex-col min-h-screen">
+    
+    <header class="text-center mb-14 relative opacity-0 animate-fade-in-up" style="animation-delay: 100ms;">
+      
+      <!-- Logotipo Principal -->
+      <div class="w-full max-w-[360px] mx-auto mb-6 flex items-center justify-center gap-3 transition-transform duration-500 hover:scale-105">
+        <img 
+          src="images/logo-header.webp" 
+          alt="Ícone Next Level Summit" 
+          class="h-14 md:h-16 w-auto object-contain drop-shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
+        />
+        <img 
+          src="images/nls-hero.png" 
+          alt="Next Level Summit Brasil" 
+          class="h-10 md:h-12 w-auto object-contain drop-shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
+        />
+      </div>
+
+      <!-- Nova Cópia Principal -->
+      <h1 class="font-poppins text-lg md:text-xl font-semibold text-white/90 max-w-2xl mx-auto leading-relaxed mt-6">
+        Acabe com a dependência do seu negócio usando tecnologia e processos do jeito certo.
+        <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400 font-bold">
+          Porque lucro de verdade não é dinheiro. É liberdade.
+        </span>
+      </h1>
+    </header>
+
+    <nav class="flex flex-col gap-6 w-full flex-grow">
+      
+      <!-- CARD 1: Ingresso -->
+      <a href="#adquirir" class="group relative block overflow-hidden rounded-3xl bg-[#0a0a0a]/60 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-pink-500/50 hover:shadow-[0_0_40px_-10px_rgba(255,0,110,0.3)] opacity-0 animate-fade-in-up" style="animation-delay: 200ms;">
+        <div class="flex flex-row h-full items-stretch">
+          
+          <!-- Lado Esquerdo: Textos -->
+          <div class="w-[55%] p-5 sm:p-8 flex flex-col justify-center relative z-10">
+            <p class="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] uppercase mb-1 sm:mb-2 text-white/40">Ingresso</p>
+            <h2 class="font-poppins text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-1.5 sm:mb-3 uppercase">
+              Garanta sua <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#FF006E] to-[#FF6B00]">Vaga</span>
+            </h2>
+            <p class="text-[11px] sm:text-sm md:text-base text-white/70 leading-snug sm:leading-relaxed font-medium">
+              Preencha o formulário rápido e veja se o NLS é pra você.
+            </p>
+          </div>
+
+          <!-- Lado Direito: Espaço para Imagem -->
+          <div class="w-[45%] relative image-placeholder flex items-center justify-center border-l border-white/5 overflow-hidden">
+             <img src="images/bio_ingresso_1782349524844.png" alt="Ingresso VIP" class="absolute w-full h-full object-cover opacity-60 mix-blend-lighten" onerror="this.style.display='none'">
+             <!-- O brilho de fundo que combina com o gradiente do texto -->
+             <div class="absolute inset-0 bg-gradient-to-br from-[#FF006E]/10 to-transparent mix-blend-overlay"></div>
+          </div>
+          
+        </div>
+      </a>
+
+      <!-- CARD 2: Dúvidas -->
+      <a href="#duvidas" class="group relative block overflow-hidden rounded-3xl bg-[#0a0a0a]/60 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/50 hover:shadow-[0_0_40px_-10px_rgba(0,102,255,0.3)] opacity-0 animate-fade-in-up" style="animation-delay: 300ms;">
+        <div class="flex flex-row h-full items-stretch">
+          
+          <div class="w-[55%] p-5 sm:p-8 flex flex-col justify-center relative z-10">
+            <p class="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] uppercase mb-1 sm:mb-2 text-white/40">Site e atendimento</p>
+            <h2 class="font-poppins text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-1.5 sm:mb-3 uppercase">
+              Ficou com <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0066FF] to-[#00D4FF]">Dúvida?</span>
+            </h2>
+            <p class="text-[11px] sm:text-sm md:text-base text-white/70 leading-snug sm:leading-relaxed font-medium">
+              Fala com nossa IA, 24h por dia, e resolve agora.
+            </p>
+          </div>
+
+          <div class="w-[45%] relative image-placeholder flex items-center justify-center border-l border-white/5 overflow-hidden">
+             <img src="images/bio_duvidas_1782349535388.png" alt="Dúvidas e Suporte IA" class="absolute w-full h-full object-cover opacity-60 mix-blend-lighten" onerror="this.style.display='none'">
+             <div class="absolute inset-0 bg-gradient-to-br from-[#0066FF]/10 to-transparent mix-blend-overlay"></div>
+          </div>
+          
+        </div>
+      </a>
+
+      <!-- CARD 3: Equipe -->
+      <a href="#equipe" class="group relative block overflow-hidden rounded-3xl bg-[#0a0a0a]/60 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-500/50 hover:shadow-[0_0_40px_-10px_rgba(16,185,129,0.3)] opacity-0 animate-fade-in-up" style="animation-delay: 400ms;">
+        <div class="flex flex-row h-full items-stretch">
+          
+          <div class="w-[55%] p-5 sm:p-8 flex flex-col justify-center relative z-10">
+            <p class="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] uppercase mb-1 sm:mb-2 text-white/40">Equipe</p>
+            <h2 class="font-poppins text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-1.5 sm:mb-3 uppercase">
+              Vai trazer sua <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#34D399]">Equipe?</span>
+            </h2>
+            <p class="text-[11px] sm:text-sm md:text-base text-white/70 leading-snug sm:leading-relaxed font-medium">
+              Time autônomo se constrói junto, não sozinho. Fala com a gente.
+            </p>
+          </div>
+
+          <div class="w-[45%] relative image-placeholder flex items-center justify-center border-l border-white/5 overflow-hidden">
+             <img src="images/bio_equipe_1782349542793.png" alt="Conexão de Equipe" class="absolute w-full h-full object-cover opacity-60 mix-blend-lighten" onerror="this.style.display='none'">
+             <div class="absolute inset-0 bg-gradient-to-br from-[#10B981]/10 to-transparent mix-blend-overlay"></div>
+          </div>
+          
+        </div>
+      </a>
+
+      <!-- CARD 4: Conteúdo -->
+      <a href="#aprender" class="group relative block overflow-hidden rounded-3xl bg-[#0a0a0a]/60 backdrop-blur-md border border-white/10 transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/50 hover:shadow-[0_0_40px_-10px_rgba(139,92,246,0.3)] opacity-0 animate-fade-in-up mb-6" style="animation-delay: 500ms;">
+        <div class="flex flex-row h-full items-stretch">
+          
+          <div class="w-[55%] p-5 sm:p-8 flex flex-col justify-center relative z-10">
+            <p class="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] uppercase mb-1 sm:mb-2 text-white/40">Conteúdo do treinamento</p>
+            <h2 class="font-poppins text-xl sm:text-3xl md:text-4xl font-black leading-tight mb-1.5 sm:mb-3 uppercase">
+              Veja o plano que <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#8B5CF6] to-[#D946EF]">leva pra casa</span>
+            </h2>
+            <p class="text-[11px] sm:text-sm md:text-base text-white/70 leading-snug sm:leading-relaxed font-medium">
+              Conteúdo prático, de quem já viveu essa rotina. Sem teoria de consultor.
+            </p>
+          </div>
+
+          <div class="w-[45%] relative image-placeholder flex items-center justify-center border-l border-white/5 overflow-hidden">
+             <img src="images/bio_conteudo_1782349553253.png" alt="Conteúdo Estratégico" class="absolute w-full h-full object-cover opacity-60 mix-blend-lighten" onerror="this.style.display='none'">
+             <div class="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-transparent mix-blend-overlay"></div>
+          </div>
+          
+        </div>
+      </a>
+
+    </nav>
+
+    <!-- RODAPÉ -->
+    <footer class="mt-auto pt-8 pb-4 text-center opacity-0 animate-fade-in-up" style="animation-delay: 600ms;">
+      <p class="text-xs text-white/30 tracking-widest uppercase font-semibold">
+        © 2026 Next Level Summit Brasil
+      </p>
+    </footer>
+
+  </main>
+
+</body>
+</html>

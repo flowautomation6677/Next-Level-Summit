@@ -1,14 +1,18 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const path = require('path');
+const path = require('node:path');
 const { OpenAI } = require('openai');
 
 const app = express();
+app.disable('x-powered-by'); // Disable implicit version disclosure header
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+    origin: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : false
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Serve static files from the root directory, allowing extensionless URLs (like /patrocinio)
