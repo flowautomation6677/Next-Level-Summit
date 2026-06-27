@@ -51,7 +51,7 @@ Treinadores Confirmados:
 4. Maíra Larangeira: CEO da Maíra Larangeira Treinamentos (Foco: PNL, Liderança, Inteligência Comportamental e Desbloqueio de Performance).
 
 Opções de Ingressos:
-1. STANDARD (R$ 147,00 ou 3x de R$ 52,78): Acesso aos 2 dias de evento, Kit de Boas-vindas.
+1. STANDARD (R$ 197,00 ou 3x de R$ 70,73): Acesso aos 2 dias de evento, Kit de Boas-vindas.
 2. VIP EXPERIENCE (R$ 497,00): Acesso aos 2 dias de evento, Kit VIP Premium, Sessão de planejamento online pós evento com os especialistas next level para implementação do que foi aprendido, Mesa especial com os treinadores no almoço (cardápio prévio), Bônus secretos de uso ferramentas NLS.
 
 Regras Restritas de Atendimento:

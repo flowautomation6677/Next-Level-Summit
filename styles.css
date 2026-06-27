@@ -460,6 +460,37 @@ ul {
     margin-bottom: 0.5rem;
 }
 
+.feature-sub-list {
+    margin-top: 0.75rem;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feature-sub-list li {
+    display: block;
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.45;
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.feature-sub-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+.feature-sub-list li strong {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
 /* Audience Section */
 .audience-section {
     background-color: var(--primary-dark);
