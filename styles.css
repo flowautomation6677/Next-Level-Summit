@@ -1558,7 +1558,8 @@ ul {
     .organizer-wrapper {
         grid-template-columns: 1fr;
         text-align: center;
-        padding: 2rem;
+        padding: 2rem 1rem;
+        gap: 2.5rem;
     }
 
     .organizer-identity {
@@ -1580,7 +1581,7 @@ ul {
     }
 
     .organizer-bio {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -1588,6 +1589,7 @@ ul {
     .organizer-stats {
         grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 1.5rem 1rem;
     }
 
     .organizer-photo-ring {

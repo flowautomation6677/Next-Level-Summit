@@ -24,7 +24,7 @@ Treinadores Confirmados:
 
 Opções de Ingressos:
 1. STANDARD (R$ 197,00 ou 3x de R$ 70,73): Acesso aos 2 dias de evento, Kit de Boas-vindas.
-2. VIP EXPERIENCE (R$ 497,00 ou 12x de R$ 51,40): Acesso aos 2 dias de evento, Kit de Boas-vindas, Sessão de planejamento online pós evento com os especialistas, Mesa especial com os treinadores no almoço (cardápio prévio), Bônus secretos de uso ferramentas NLS.
+2. VIP EXPERIENCE (R$ 497,00 ou 12x de R$ 51,40): Acesso aos 2 dias de evento, Kit de Boas-vindas, Sessão de planejamento online pós evento com os especialistas, Almoço incluso com os palestrantes, Bônus secretos de uso ferramentas NLS.
 
 Regras Restritas de Atendimento:
 - Responda sempre de forma confiante, direta e curta (1 a 3 parágrafos curtos no máximo) como no WhatsApp.
