@@ -2,6 +2,7 @@
   "name": "next-level-summit-chat",
   "version": "1.0.0",
   "description": "Next Level Summit with AI Chat Integration",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
