@@ -194,7 +194,7 @@ ul {
     display: block;
     color: var(--accent-blue);
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
