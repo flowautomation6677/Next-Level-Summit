@@ -35,9 +35,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Core Web Vitals Optimization: Resource Hinting for Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Montserrat:wght@400;600;700;800;900&family=Caveat:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Schema.org Markup for Event -->
     <script type="application/ld+json">
@@ -571,10 +569,85 @@
                     <ul class="pricing-features">
                         <li><span>✔️</span> <span>Todos os benefícios do Standard</span></li>
                         <li><span>⭐</span> <span>Assentos exclusivos na primeira fileira</span></li>
-                        <li><span>🍽️</span> <span>Almoço incluso com os treinadores (2 dias)</span></li>
-                        <li><span>🎯</span> <span>Sessão de implementação (1h) com os especialistas</span></li>
+                        <li class="has-details">
+                            <details>
+                                <summary>
+                                    <span>🍽️</span> 
+                                    <span>Almoço incluso com os treinadores (2 dias)</span>
+                                </summary>
+                                <p class="details-content">
+                                    Um momento reservado para networking, troca de experiências e conversas estratégicas. Sem custo adicional: o almoço é por conta do evento.
+                                </p>
+                            </details>
+                        </li>
+                        <li class="has-details">
+                            <details>
+                                <summary>
+                                    <span>🎯</span> 
+                                    <span>Sessão de implementação (1h) com os especialistas</span>
+                                </summary>
+                                <p class="details-content">
+                                    Encontro online pós-evento para organizar prioridades, tirar dúvidas e construir um plano de ação para aplicar o que foi aprendido.
+                                </p>
+                            </details>
+                        </li>
                     </ul>
                     <a href="chat.html?ingresso=vip" class="btn btn-primary" style="width: 100%; display: block; text-align: center;">QUERO A EXPERIÊNCIA VIP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia Section -->
+    <section id="garantia" class="section guarantee-section">
+        <div class="container">
+            <div class="guarantee-grid animate-on-scroll">
+                <!-- Left: Info -->
+                <div class="guarantee-info">
+                    <span class="eyebrow">COMPROMISSO NEXT LEVEL</span>
+                    <h2 class="guarantee-title">RISCO <br><span class="highlight-neon">ZERO.</span></h2>
+                    <p class="guarantee-subtitle">
+                        Estar presente nos 2 dias do Next Level Summit Brasil é uma decisão sem riscos: ou vale a pena para você, ou seu dinheiro de volta.
+                    </p>
+                    <div class="guarantee-badge">
+                        <div class="guarantee-badge-ribbon left"></div>
+                        <div class="guarantee-badge-ribbon right"></div>
+                        <div class="guarantee-badge-inner">
+                            <span class="guarantee-badge-text-top">GARANTIA</span>
+                            <svg class="guarantee-badge-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                            <span class="guarantee-badge-text-bottom">CONDICIONAL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Contract Paper -->
+                <div class="guarantee-card-wrapper">
+                    <div class="contract-paper">
+                        <div class="contract-paper-inner">
+                            <div class="contract-header">
+                                <span class="contract-tag">Contrato</span>
+                                <h3>CONTRATO DE GARANTIA CONDICIONAL</h3>
+                            </div>
+                            <div class="contract-body">
+                                <p>
+                                    Ao participar dos dois dias inteiros do Next Level Summit Brasil, nós garantimos que você terá clareza e o caminho certo para estruturar o seu negócio contra o caos.
+                                </p>
+                                <p>
+                                    Se ao final da imersão você avaliar que o evento não entregou o valor prometido, solicitamos apenas que nos informe. Nós devolveremos cada centavo do seu investimento e, além disso, você ganhará um ingresso para a próxima edição de forma 100% gratuita.
+                                </p>
+                            </div>
+                            <div class="contract-footer">
+                                <div class="signature-stamp">
+                                    <span class="signature-name">Next Level</span>
+                                    <span class="signature-sub">NEXT LEVEL SUMMIT</span>
+                                    <span class="signature-role">CONSELHO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
