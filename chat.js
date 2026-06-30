@@ -207,7 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             const intentMap = {
                 'vip': 'Quero saber mais sobre o ingresso VIP Experience',
-                'standard': 'Quero saber mais sobre o ingresso Standard'
+                'standard': 'Quero saber mais sobre o ingresso Standard',
+                'equipe': 'Quero levar minha equipe e quero saber como funciona'
             };
             if(intentMap[ingressoIntent]) {
                 const text = intentMap[ingressoIntent];

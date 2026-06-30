@@ -551,7 +551,7 @@ ul {
 /* Flip Card Specifics */
 .speaker-card.flip-card {
     perspective: 1000px;
-    height: 520px;
+    height: 580px;
     /* Fixed height for consistent cards */
     background-color: transparent;
 }
@@ -593,7 +593,7 @@ ul {
     background: #ffffff;
     color: #333;
     transform: rotateY(180deg);
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: 0 0 40px rgba(0, 255, 187, 0.3);
     display: flex;
     flex-direction: column;
@@ -867,6 +867,115 @@ ul {
     .section-title {
         font-size: 2rem;
     }
+
+    .speaker-card.flip-card {
+        height: 560px;
+    }
+
+    .flip-card-back {
+        padding: 1.5rem;
+    }
+}
+
+.mission-features {
+    margin-top: 3rem;
+}
+
+.mission-feature {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.mission-feature-icon {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--accent-blue);
+    font-size: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.mission-feature-content h4 {
+    color: var(--text-white);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+}
+
+.mission-feature-content p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.mission-feature-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Custom VIP Details - Opção 2 */
+details.vip-detail {
+    margin-bottom: 0.2rem;
+}
+details.vip-detail > summary, .vip-summary {
+    list-style: none !important;
+    list-style-type: none !important;
+    cursor: pointer;
+    outline: none;
+    display: block;
+}
+details.vip-detail > summary::-webkit-details-marker, .vip-summary::-webkit-details-marker {
+    display: none !important;
+    color: transparent !important;
+    background: transparent !important;
+}
+details.vip-detail > summary::marker, .vip-summary::marker {
+    display: none !important;
+    content: "" !important;
+    color: transparent !important;
+}
+.vip-summary::after {
+    display: none !important;
+    content: "" !important;
+}
+.vip-summary-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0.8rem;
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+.vip-summary:hover .vip-summary-inner {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.vip-summary-content {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.vip-chevron {
+    color: var(--accent-green);
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+}
+.vip-summary:hover .vip-chevron {
+    opacity: 1;
+}
+details.vip-detail[open] .vip-chevron {
+    transform: rotate(180deg);
+    opacity: 1;
 }
 
 /* Pricing Section */
@@ -1775,6 +1884,7 @@ h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .logo-text, .eyebrow {
     line-height: 1.7;
     color: var(--text-gray);
     max-width: 540px;
+    width: 100%;
 }
 
 .guarantee-card-wrapper {
@@ -1803,15 +1913,7 @@ h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .logo-text, .eyebrow {
 }
 
 .guarantee-badge::before {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    border-radius: 50%;
-    border: 2px dashed rgba(255, 255, 255, 0.5);
-    z-index: 1;
+    display: none;
 }
 
 .guarantee-badge-inner {
@@ -2005,6 +2107,10 @@ h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .logo-text, .eyebrow {
         text-align: center;
     }
     
+    .guarantee-info {
+        align-items: center;
+    }
+    
     .guarantee-subtitle {
         margin: 0 auto;
     }
@@ -2012,6 +2118,11 @@ h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .logo-text, .eyebrow {
     .contract-paper {
         transform: rotate(0deg);
         margin: 0 auto;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .contract-header h3 {
+        font-size: 1.4rem;
     }
 }
 
