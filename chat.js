@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let conversationHistory = [
+        {
+            role: "assistant",
+            content: "Olá! Tudo bem? 👋 Eu sou a inteligência artificial do Next Level Summit Brasil. Estou aqui para tirar todas as suas dúvidas sobre o evento ou ajudar a garantir o seu ingresso! Me diz, você quer saber mais sobre os treinadores, sobre os ingressos (Standard/VIP) ou outra coisa?"
+        }
+    ];
+
     const chatMessages = document.getElementById('chat-messages');
     const chatForm = document.getElementById('chat-form');
     const messageInput = document.getElementById('message-input');
@@ -122,13 +129,15 @@ document.addEventListener('DOMContentLoaded', () => {
         addUserMessage(text);
         showTypingIndicator();
 
+        conversationHistory.push({ role: 'user', content: text });
+
         try {
             const response = await fetch('/api/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ message: text })
+                body: JSON.stringify({ messages: conversationHistory })
             });
 
             if (!response.ok) {
@@ -137,6 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const data = await response.json();
             hideTypingIndicator();
+            
+            conversationHistory.push({ role: 'assistant', content: data.reply });
             
             // Quebra a resposta da IA em parágrafos separados e filtra strings vazias
             const paragraphs = data.reply.split('\n\n').filter(p => p.trim().length > 0);
@@ -157,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Erro:', error);
             hideTypingIndicator();
+            conversationHistory.pop(); // Remove the user message that failed to send
             addBotMessage("Desculpe, estou com um pouco de instabilidade na minha rede agora. Pode tentar novamente em alguns segundos?");
         }
     }

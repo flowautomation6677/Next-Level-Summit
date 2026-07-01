@@ -8,18 +8,20 @@ if (process.env.OPENAI_API_KEY) {
     });
 }
 
-async function getChatReply(userMessage) {
+async function getChatReply(conversationHistory) {
     if (!openai) {
         throw new Error('NOT_CONFIGURED');
     }
 
+    const messages = [
+        { role: "system", content: SYSTEM_PROMPT },
+        ...conversationHistory
+    ];
+
     const completion = await openai.chat.completions.create({
         model: "gpt-4o-mini", // Using a fast, cost-effective model
-        messages: [
-            { role: "system", content: SYSTEM_PROMPT },
-            { role: "user", content: userMessage }
-        ],
-        temperature: 0.7,
+        messages: messages,
+        temperature: 0.2,
         max_tokens: 300
     });
 

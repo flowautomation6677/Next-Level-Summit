@@ -26,14 +26,14 @@ app.use(express.static(__dirname, { extensions: ['html'] }));
 
 app.post('/api/chat', async (req, res) => {
     try {
-        const userMessage = req.body.message;
+        const { messages } = req.body;
 
-        if (!userMessage) {
-            return res.status(400).json({ error: 'A mensagem é obrigatória' });
+        if (!messages || !Array.isArray(messages)) {
+            return res.status(400).json({ error: 'O histórico de mensagens é obrigatório' });
         }
 
         try {
-            const reply = await getChatReply(userMessage);
+            const reply = await getChatReply(messages);
             res.json({ reply });
         } catch (err) {
             if (err.message === 'NOT_CONFIGURED') {
