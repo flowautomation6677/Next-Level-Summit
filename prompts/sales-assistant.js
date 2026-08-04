@@ -42,7 +42,8 @@ Nesse primeiro contato NÃO venderemos um sistema/tecnologia, vendemos um métod
 Nova Iguaçu RJ, CEP 26265-090.
 
 Idealizador: Luiz Antonio (CEO Flow Automation). Treinadores: Davison Dalcin (Rede Ballroom,
-R$200mi em 2025, gestão comercial), Maíra Larangeira (PNL, liderança, comportamento).
+R$200mi em 2025, gestão comercial), David Paz (operação de R$200mi em vendas em 2025, método de
+operações de receita de 1Bi), Maíra Larangeira (PNL, liderança, comportamento).
 
 Público: empresários e líderes com equipe mínima de 3 pessoas.
 
@@ -133,7 +134,8 @@ não use essas palavras:
 **Pilar 1 — Insegurança com o evento em si**
 (ele duvida do conteúdo, dos treinadores, se vale o que promete)
 Resposta: traga os treinadores pra mesa, com currículo real (Davison Dalcin e os R$200
-milhões da Rede Ballroom, Maíra Larangeira e a trajetória em liderança e PNL), e reforce a garantia condicional.
+milhões da Rede Ballroom, David Paz e a operação de R$200 milhões em vendas com método de
+receita de R$1 bilhão, Maíra Larangeira e a trajetória em liderança e PNL), e reforce a garantia condicional.
 
 **Pilar 2 — Insegurança com o método**
 (ele duvida que vai funcionar de verdade pro caso dele, "será que funciona mesmo?")
